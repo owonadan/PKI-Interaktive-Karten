@@ -6,7 +6,7 @@ from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim
 from geopy import distance
 
-locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
+# locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
 
 # Streamlit Kontrolleinstellung
 st.set_page_config(layout="wide", page_title="PKI - Interaktive Karte zu Unverpackt- und Hofläden",
