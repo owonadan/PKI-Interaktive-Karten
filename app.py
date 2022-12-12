@@ -21,9 +21,9 @@ adresse = st.text_input(f"\nBitte gib deine Adresse im Format\n'Straße Nr, PLZ 
 geolocator = Nominatim(user_agent="pki_interaktive_karte")
 location = geolocator.geocode(adresse)
 location_tpl = (location.latitude, location.longitude)
-st.write(f"Deine Adresse wurde in folgende Komponenten aufgelöst")
-st.write(f"Breitengrad: {location_tpl[0]}")
-st.write(f"Längengrad: {location_tpl[1]}")
+#st.write(f"Deine Adresse wurde in folgende Komponenten aufgelöst")
+#st.write(f"Breitengrad: {location_tpl[0]}")
+#st.write(f"Längengrad: {location_tpl[1]}")
 
 # Funktionen
 @st.experimental_memo
