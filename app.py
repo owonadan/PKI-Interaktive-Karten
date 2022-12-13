@@ -176,6 +176,9 @@ if typ == "Hofläden":
     # call to render Folium map in Streamlit
     m = zeichne_map_hoflaeden(df1, location_tpl[0], location_tpl[1], radius)
     st_data = st_folium(m, width=800)
+    st.header("Alle Hofläden Locations mit Detailinformationen")
+    st.dataframe(df1)
+
 elif typ == "Unverpacktläden":
     st.write("Unverpackt Läden innerhalb des Radius:")
     st.write(unverpackt_im_radius)
@@ -183,6 +186,8 @@ elif typ == "Unverpacktläden":
     # call to render Folium map in Streamlit
     m = zeichne_map_unverpackt(df2, location_tpl[0], location_tpl[1], radius)
     st_data = st_folium(m, width=800)
+    st.header("Alle Unverpackt Läden Locations mit Detailinformationen")
+    st.dataframe(df2)
 elif typ == "Alle":
     st.write("Hofläden und Unverpackt Läden innerhalb des Radius:")
     st.write(hoflaeden_im_radius)
@@ -191,11 +196,11 @@ elif typ == "Alle":
     # call to render Folium map in Streamlit
     m = zeichne_map_kombiniert(df1, df2, location_tpl[0], location_tpl[1], radius)
     st_data = st_folium(m, width = 800)
+    st.header("Alle Hofläden Locations mit Detailinformationen")
+    st.dataframe(df1)
+    st.header("Alle Unverpackt Läden Locations mit Detailinformationen")
+    st.dataframe(df2)
 
-st.header("Alle Hofläden Locations mit Detailinformationen")
-st.dataframe(df1)
 
-st.header("Alle Unverpackt Läden Locations mit Detailinformationen")
-st.dataframe(df2)
 
         
