@@ -47,6 +47,8 @@ def grab_df2():
     # so bekommen wir keine probleme bei der distanzberechnung
     df2.dropna(subset=["lat", "lng"], inplace=True)
     df2.rename(columns={"lat": "geo_latitude", "lng": "geo_longitude"}, inplace=True)
+    # fillna
+    df2["websiteUrl"].fillna("", inplace=True)
 
     return df2
 
