@@ -49,6 +49,8 @@ def grab_df2():
     df2.rename(columns={"lat": "geo_latitude", "lng": "geo_longitude"}, inplace=True)
     # fillna
     df2["websiteUrl"].fillna("", inplace=True)
+    # Ersetze alle Werte in der Spalte "websiteUrl", die entweder "x" oder "-" sind, durch einen leeren String
+    df2['websiteUrl'] = df2['websiteUrl'].where(df2['websiteUrl'].str.match(r'^[^x-]*$'), '')
 
     return df2
 
