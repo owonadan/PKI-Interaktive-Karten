@@ -51,8 +51,6 @@ def grab_df2():
     df2["websiteUrl"].fillna("", inplace=True)
     # Ersetze alle Werte in der Spalte "websiteUrl", die entweder "x" oder "-" sind, durch einen leeren String
     df2['websiteUrl'] = df2['websiteUrl'].where(df2['websiteUrl'].str.match(r'^[^x-]*$'), '')
-    # Konvertiere alle URLs in der Spalte "webSiteUrl" in anklickbare Links
-    df2['webSiteUrl'] = df['webSiteUrl'].apply(lambda x: f'<a href="https://{x}" target="_blank">{x}</a>')
 
     return df2
 
