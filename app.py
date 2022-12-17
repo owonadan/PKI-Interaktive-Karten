@@ -57,9 +57,7 @@ def grab_df2():
                         "name":"Name",
                         "type":"Mitgliedsstatus/Mitgliedsart",
                         "address": "Adresse",
-                        "websiteUrl": "Website",
-                        "geo_latidude": "Breitengrad",
-                        "geo_longitude": "Längengrad"},
+                        "websiteUrl": "Website"},
               inplace=True)
 
     return df2
