@@ -1,9 +1,0 @@
-name: PKI
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.10.8=h3ba56d0_0_cpython
-  - pip
-  - pip:
-    - -r requirements.txt
