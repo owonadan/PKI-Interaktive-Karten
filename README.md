@@ -35,7 +35,7 @@ python hoflaeden_async.py
 python unverpackt_async.py
 ```
 
-# Streamlit lokal laufen lassen
+# Optional: Streamlit App lokal ausführen
 Mit folgendem Kommando kann die Streamlit App auch lokal erzeugt werden:  
 ```streamlit run app.py```  
 
