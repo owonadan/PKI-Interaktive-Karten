@@ -1,7 +1,11 @@
 # Allgemein
 Streamlit App für das Gruppenprojekt in PKI. Teilnehmer: Zekiye Saylam, Björn Schmidt, Sascha Zhu, Daniel Owona
 
-Das Ergebnis ist die Webapp unter: https://owonadan-pki-interaktive-karten-app-ge8krp.streamlit.app/
+Das Ergebnis ist die Webapp unter: https://owonadan-pki-interaktive-karten-app-ge8krp.streamlit.app/  
+
+Das Github Repository findet sich unter: https://github.com/owonadan/PKI-Interaktive-Karten
+
+Eine Zip Version des Repositorys lässt sich mit folgendem Link downloaden: https://github.com/owonadan/PKI-Interaktive-Karten/zipball/master/  
 
 # Environment Setup
 ## Clonen von Github
