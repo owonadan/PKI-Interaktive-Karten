@@ -65,6 +65,7 @@ async def main() -> None:
     detail_infos = []
 
     id_list = scrape_store_ids()
+    # print(id_list[:10]) für präsentation
 
     tasks = []
 
@@ -72,11 +73,14 @@ async def main() -> None:
     for id in id_list:
         task = asyncio.create_task(scrape_store_details(id))
         tasks.append(task)
+    # print(tasks[:2]) # für visualisierung auf powerpoint
 
     print("Saving the output of extracted information.")
 
     # await asyncio.gather(*tasks, return_exceptions=True)
     await asyncio.gather(*tasks)
+
+    # print(detail_infos[:1]) für visulaisierung auf ppt
 
     time_difference = time.perf_counter() - start_time
     print(f"Scraping time: {time_difference} seconds.")
