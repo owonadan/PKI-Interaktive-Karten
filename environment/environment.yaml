@@ -1,4 +1,4 @@
-name: PKI-YML-TEST
+name: PKI
 channels:
   - conda-forge
   - defaults
