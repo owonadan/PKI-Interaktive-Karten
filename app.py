@@ -92,7 +92,7 @@ def zeichne_map_kombiniert(df1, df2, geo_latitude, geo_longitude, radiusKM):
     return m
 
 def zeichne_map_hoflaeden(df1, geo_latitude, geo_longitude, radiusKM):
-    m = folium.Map(location=[geo_latitude, geo_longitude], zoom_start=12)
+    m = folium.Map(location=[geo_latitude, geo_longitude], zoom_start=9)
     # plotten von hoflaeden
     for index, location_info in df1.iterrows():
         pop = """<b>Hofladen</b></br>
