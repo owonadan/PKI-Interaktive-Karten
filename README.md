@@ -24,8 +24,11 @@ lokal erzeugen kann.
 
 Die Streamlit App bedient sich aus den beiden .csv Dateien, 
 die im Verzeichnis /data in diesem Repository liegen. 
-Diese können zum aktuellen Stand nur von den Projektgruppenteilnehmern in diesem Repository aktualisiert werden.
-Achtung: wir befinden uns noch in unserer conda/miniconda env.
+Diese können zum aktuellen Stand nur von den Projektgruppenteilnehmern in diesem Repository aktualisiert werden.  
+
+Achtung: Wir befinden uns noch in unserer aktiverten conda/miniconda env und füren innerhalb dieser die beiden
+Befehle zur Generierung aus.
+
 ```
 python hoflaeden_async.py
 python unverpackt_async.py
